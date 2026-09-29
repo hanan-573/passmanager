@@ -1,0 +1,7 @@
+Flask
+cryptography
+pandas
+openpyxl
+xlrd
+xlwt
+pyodbc
