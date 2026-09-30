@@ -26,7 +26,7 @@ A simple, secure, and self-hosted **Password Manager** built with **Flask + Pyth
 ## 🛠️ Tech Stack
 
 | Layer | Technology |
-|-------|------------|
+|---|---|
 | Backend | Python 3, Flask |
 | Encryption | `cryptography` (Fernet, PBKDF2HMAC) |
 | Frontend | HTML5, CSS3, Vanilla JavaScript |
@@ -36,27 +36,56 @@ A simple, secure, and self-hosted **Password Manager** built with **Flask + Pyth
 ---
 
 ## 📂 Project Structure
+
+```text
 PassManager/
-│── app.py              # Flask server + API routes
-│── crypto_utils.py     # Encryption / decryption (Fernet + PBKDF2)
-│── file_handler.py     # Import / Export (CSV, JSON, XLS, XLSX, MDB)
-│── index.html          # Main UI (lock screen + dashboard)
-│── style.css           # Styling + dark theme
-│── app.js              # Frontend logic
-│── requirements.txt    # Python dependencies
-│── salt.bin            # (auto-generated) PBKDF2 salt
-│── vault.enc           # (auto-generated) Encrypted vault
+├── app.py              # Flask server + API routes
+├── crypto_utils.py     # Encryption / decryption (Fernet + PBKDF2)
+├── file_handler.py     # Import / Export (CSV, JSON, XLS, XLSX, MDB)
+├── index.html          # Main UI (lock screen + dashboard)
+├── style.css           # Styling + dark theme
+├── app.js              # Frontend logic
+├── requirements.txt    # Python dependencies
+├── salt.bin             # (auto-generated) PBKDF2 salt
+├── vault.enc            # (auto-generated) Encrypted vault
 └── README.md
+```
 
+---
 
-CREATE A VIRTUAL ENVIRONMENT:- 
+## ⚙️ Installation
+
+### 1. Create a Virtual Environment
+
+```bash
 python -m venv venv
+```
 
+### 2. Activate the Virtual Environment
 
-INSTALL DEPENDENCIES: 
+**Linux / macOS:**
+
+```bash
+source venv/bin/activate
+```
+
+**Windows:**
+
+```bash
+venv\Scripts\activate
+```
+
+### 3. Install Dependencies
+
+```bash
 pip install -r requirements.txt
+```
 
-REQUIREMENTS.TXT: 
+---
+
+## 📦 Requirements.txt
+
+```text
 Flask
 cryptography
 pandas
@@ -64,12 +93,26 @@ openpyxl
 xlrd
 xlwt
 pyodbc
+```
 
+---
 
-USAGE HOW TO USE: 
+## ▶️ Usage
+
+Start the application:
+
+```bash
 python app.py
+```
 
-OPEN BROWSER: 
+Then open your browser:
+
+```text
 http://127.0.0.1:5000
-hello this project
-html is used in this project
+```
+
+---
+
+## ℹ️ Project Information
+
+Hello, this project uses HTML for the frontend.
